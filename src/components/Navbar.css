@@ -1,0 +1,102 @@
+/* Base styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.cc {
+  background-color: orange;
+}
+.image-container {
+  background-image: url("../../public/bg.jpeg");
+  margin: 0;
+  padding: 0;
+  height: 70vh; /* Adjust the initial height as needed */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 10px solid #00B3E3;
+  border-top : 25px solid #DA3AB3;
+}
+
+.image {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2px;
+  /* object-fit: scale-down;
+  object-position: center; */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* For screen width up to 768px (e.g., mobile devices) */
+  .image-container {
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    height: 70vh; /* Adjust the initial height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 350px;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    padding: 0;
+    object-position: center;
+  }
+}
+
+/* Custom CSS for the footer */
+.footer {
+  background-color: #f0f0f0;
+  
+}
+.error {
+  color: red;
+}
+.error-input {
+  border-color: red;
+  /* For input borders */
+  background-color: #ffe6e6;
+  /* For background */
+  color: red;
+  /* For text color */
+}
+
+.sub-footer {
+  text-align: center;
+  flex: 0 0 50%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.sub-footer p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
